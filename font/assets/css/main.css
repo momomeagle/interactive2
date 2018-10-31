@@ -1,0 +1,851 @@
+body {
+	 background-color: white;
+}
+
+.letter {
+	width: 200px;
+	height: 400px;
+	position: relative;
+	display: inline-block;
+	margin: -20px;
+	transform: scale(0.5,0.55); /* Equal to scaleX(0.7) scaleY(0.7) */
+}
+
+/* pieces */
+
+.vertical {
+	width: 60px;
+	height: 100%;
+	background: grey;
+	position: absolute;
+}
+.verticalfs {
+	width: 60px;
+	height: 30%;
+	background: grey;
+	position: absolute;
+}
+.verticallfs {
+	width: 60px;
+	height: 70%;
+	background: grey;
+	position: absolute;
+}
+.verticalss {
+	width: 20px;
+	height: 30%;
+	background: grey;
+	position: absolute;
+}
+.verticalsf {
+	width: 20px;
+	height: 100%;
+	background: grey;
+	position: absolute;
+}
+.verticalsl {
+	width: 20px;
+	height: 70%;
+	background: grey;
+	position: absolute;
+}
+.verticalf {
+	width: 60px;
+	height: 70%;
+	background: grey;
+	position: absolute;
+}
+
+.horizontal {
+	width: 100%;
+	height: 15px;
+	background: grey;	
+	position: absolute;
+}
+
+.horizontals {
+	width: 70%;
+	height: 15px;
+	background: grey;	
+	position: absolute;
+}
+.horizontalss {
+	width: 50%;
+	height: 15px;
+	background: grey;	
+	position: absolute;
+}
+.horizontalsss {
+	width: 44%;
+	height: 15px;
+	background: grey;	
+	position: absolute;
+}
+.horizontalz {
+	width: 100%;
+	height: 50px;
+	background: grey;	
+	position: absolute;
+}
+.vbig {
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-top: 120px solid grey;
+	position: absolute;
+}
+
+.vsmall {
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-top: 70px solid white;
+	position: absolute;
+}
+
+.xbig {
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-top: 150px solid grey;
+	position: absolute;
+}
+
+.xsmall {
+	border-left: 45px solid transparent;
+	border-right: 45px solid transparent;
+	border-top: 90px solid white;
+	position: absolute;
+}
+
+.xubig {
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 310px solid grey;
+	position: absolute;
+}
+
+.xusmall {
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 230px solid white;
+	position: absolute;
+}
+
+.zbig {
+	border-left: 0px solid transparent;
+	border-right: 145px solid transparent;
+	border-top: 400px solid grey;
+	position: absolute;
+}
+
+.zsmall {
+	    border-left: 0px solid transparent;
+    border-right: 125px solid transparent;
+    border-top: 335px solid white;
+    position: absolute;
+}
+/* A */
+
+/* 
+style the left 
+vertical stroke in 
+'A' by combining 
+classes 
+*/
+
+#A .vertical.left {
+	left: 0px;
+	top: 0px;
+}
+
+#A .verticalsf.right {
+	right: 0px;
+	top: 0px;
+}
+
+#A .horizontal.top {
+	top: 0px;
+	left: 0px;
+}
+
+#A .horizontal.middle {
+	top: 120px;
+	left: 0px;
+}
+
+/* 
+
+#A .vertical {
+	background-image: repeating-linear-gradient(to right, transparent, transparent 5px, #fff 5px, #fff 7px, transparent 7px);		
+}
+
+#A .horizontal {
+	background-image: repeating-linear-gradient(to bottom, transparent, transparent 5px, #fff 5px, #fff 7px, transparent 7px);		
+}
+
+*/
+
+/* B */
+
+#B .horizontal, #B .vertical{
+	background: grey;	
+}
+
+#B .vertical.left {
+	left: 0px;
+	top: 0px;
+}
+
+#B .verticalss.rightone {
+	right: 50px;
+	top: 0px;
+
+}
+#B .verticalsl.righttwo {
+	right: 0px;
+	top: 120px;
+}
+
+#B .horizontals.top {
+	top: 0px;
+	left: 0px;
+	
+}
+
+#B .horizontal.middle {
+	top: 120px;
+	left: 0px;
+}
+
+#B .horizontal.bottom {
+	bottom: 0px;
+	left: 0px;
+}
+
+
+
+/*
+#B .horizontal{
+	background: magenta;
+	mix-blend-mode: multiply;
+}
+
+#B .vertical {
+	background: cyan;
+	mix-blend-mode: screen;
+}
+*/
+#C .vertical.left {
+	left: 0px;
+	top: 0px;
+}
+
+#C .vertical.right {
+	right: 0px;
+	top: 0px;
+}
+
+#C .horizontals.top {
+	top: 0px;
+	left: 0px;
+}
+
+#C .horizontal.bottom {
+	bottom:0px;
+	left: 0px;
+}
+/*
+#C .horizontal{
+	background: magenta;
+	mix-blend-mode: multiply;
+}
+
+#C .vertical {
+	background: cyan;
+	mix-blend-mode: screen;
+}
+*/
+
+
+
+#D .vertical.left {
+	left: 0px;
+	top: 0px;
+}
+
+#D .verticalsf.right {
+	right: 0px;
+	top: 0px;
+}
+
+#D .horizontal.top {
+	top: 0px;
+	left: 0px;
+}
+
+#D .horizontal.bottom {
+	bottom: 0px;
+	left: 0px;
+}
+
+/*
+#D .horizontal{
+	background: magenta;
+	mix-blend-mode: multiply;
+}
+
+#D .vertical {
+	background: cyan;
+	mix-blend-mode: screen;
+}
+*/
+#E  .horizontal{
+	background: grey;	
+}
+
+#E  .vertical.left {
+	left: 0px;
+	top: 0px;
+}
+
+#E .horizontals.top {
+	top: 0px;
+	left: 0px;
+	
+}
+
+#E .horizontal.middle {
+	top: 120px;
+	left: 0px;
+}
+
+#E .horizontal.bottom {
+	bottom: 0px;
+	left: 0px;
+}
+/*
+#E .horizontal{
+	background: magenta;
+	mix-blend-mode: multiply;
+}
+
+#E .vertical {
+	background: cyan;
+	mix-blend-mode: screen;
+}
+*/
+#F  .horizontal{
+	background: grey;	
+}
+
+#F  .vertical.left {
+	left: 0px;
+	top: 0px;
+}
+
+#F .horizontals.top {
+	top: 0px;
+	left: 0px;
+	
+}
+
+#F .horizontal.middle {
+	top: 120px;
+	left: 0px;
+}
+/*
+#F .horizontal{
+	background: magenta;
+	mix-blend-mode: multiply;
+}
+
+#F .vertical {
+	background: cyan;
+	mix-blend-mode: screen;
+}
+*/
+
+#G .vertical.left {
+	left: 0px;
+	top: 0px;
+}
+
+#G .vertical.right {
+	right: 0px;
+	top: 0px;
+}
+
+#G .horizontals.top {
+	top: 0px;
+	left: 0px;
+}
+
+#G .horizontal.bottom {
+	bottom:0px;
+	left: 0px;
+}
+#G .horizontalss.middle {
+	top: 120px;
+	right: 0px;
+}
+#G .verticalsl.right {
+	right: 0px;
+	top: 120px;
+}
+/*
+#G .horizontal{
+	background: magenta;
+	mix-blend-mode: multiply;
+}
+
+#G .vertical {
+	background: cyan;
+	mix-blend-mode: screen;
+}
+*/
+#H .vertical.left {
+	left: 0px;
+	top: 0px;
+}
+
+#H .verticalsf.right {
+	right: 0px;
+	top: 0px;
+}
+
+#H .horizontal.middle {
+	top: 120px;
+	left: 0px;
+}
+/*
+#H .horizontal{
+	background: magenta;
+	mix-blend-mode: multiply;
+}
+
+#H .vertical {
+	background: cyan;
+	mix-blend-mode: screen;
+}
+*/
+#I .vertical.left {
+	left: 30%;
+	top: 0px;
+}
+/*
+#I .horizontal{
+	background: magenta;
+	mix-blend-mode: multiply;
+}
+*/
+#J .vertical.right {
+	right: 0px;
+	top: 0px;
+}
+#J .horizontal.bottom {
+	bottom:0px;
+	left: 0px;
+}
+/*
+#J .horizontal{
+	background: magenta;
+	mix-blend-mode: multiply;
+}
+*/
+#K .horizontal, #B .vertical{
+	background: grey;	
+}
+
+#K .vertical.left {
+	left: 0px;
+	top: 0px;
+}
+
+#K .verticalss.rightone {
+	right: 50px;
+	top: 0px;
+
+}
+#K .verticalsl.righttwo {
+	right: 0px;
+	top: 120px;
+}
+
+#K .horizontal.middle {
+	top: 120px;
+	left: 0px;
+}
+/*
+#K .horizontal{
+	background: magenta;
+	mix-blend-mode: multiply;
+}
+*/
+#L .vertical.left {
+	left: 0px;
+	top: 0px;
+}
+#L .horizontal.bottom {
+	bottom:0px;
+	left: 0px;
+}
+/*
+#L .horizontal{
+	background: magenta;
+	mix-blend-mode: multiply;
+}
+*/
+#M .vertical.left {
+	left: 0px;
+	top: 0px;
+}
+
+#M .verticalsf.right {
+	right: 0px;
+	top: 0px;
+}
+
+#M .horizontal.top {
+	top: 0px;
+	left: 0px;
+}
+#M .verticalss.rightone {
+	right: 68px;
+	top: 0px;
+}
+/*
+#M .horizontal{
+	background: magenta;
+	mix-blend-mode: multiply;
+}
+*/
+#N .vertical.left {
+	left: 0px;
+	top: 0px;
+}
+
+#N .verticalsf.right {
+	right: 0px;
+	top: 0px;
+}
+#N .verticalsf.middle {
+	right: 68px;
+	top: 0px;
+}
+#N .horizontalss.top {
+	top: 0px;
+	left: 15px;
+}
+#N .horizontalsss.bottom {
+	bottom: 0px;
+	right: 0px;
+}
+/*
+#N .horizontal{
+	background: magenta;
+	mix-blend-mode: multiply;
+}
+*/
+#O .vertical.left {
+	left: 0px;
+	top: 0px;
+}
+
+#O .vertical.right {
+	right: 0px;
+	top: 0px;
+}
+
+#O .horizontal.top {
+	top: 0px;
+	left: 0px;
+}
+
+#O .horizontal.bottom {
+	bottom: 0px;
+	left: 0px;
+}
+/*
+#O .horizontal{
+	background: magenta;
+	mix-blend-mode: multiply;
+}
+*/
+
+#P  .vertical.left {
+	left: 0px;
+	top: 0px;
+}
+
+#P .horizontal.top {
+	top: 0px;
+	left: 0px;
+	
+}
+
+#P .horizontal.middle {
+	top: 120px;
+	left: 0px;
+}
+#P .verticalss.rightone {
+	right: 0px;
+	top: 0px;
+
+}
+/*
+#P .horizontal{
+	background: magenta;
+	mix-blend-mode: multiply;
+}
+*/
+
+#Q .vertical.left {
+	left: 0px;
+	top: 0px;
+}
+
+#Q .vertical.right {
+	right: 30px;
+	top: 0px;
+}
+
+#Q .horizontals.top {
+	top: 0px;
+	left: 0px;
+	
+}
+
+#Q .horizontal.bottom {
+	bottom: 0px;
+	left: 0px;
+}
+/*
+#Q .horizontal{
+	background: magenta;
+	mix-blend-mode: multiply;
+}
+*/
+
+#R .horizontal, #B .vertical{
+	background: grey;	
+}
+
+#R .vertical.left {
+	left: 0px;
+	top: 0px;
+}
+
+#R .verticalss.rightone {
+	right: 50px;
+	top: 0px;
+
+}
+#R .verticalsl.righttwo {
+	right: 0px;
+	top: 120px;
+}
+
+#R .horizontals.top {
+	top: 0px;
+	left: 0px;
+	
+}
+
+#R .horizontal.middle {
+	top: 120px;
+	left: 0px;
+}
+/*
+#R
+*/
+#S  .horizontal{
+	background: grey;	
+}
+
+#S  .verticalfs.left {
+	left: 0px;
+	top: 0px;
+}
+
+#S .horizontals.top {
+	top: 0px;
+	left: 0px;
+	
+}
+
+#S .horizontal.middle {
+	top: 120px;
+	left: 0px;
+}
+
+#S .verticalsl.righttwo {
+	right: 0px;
+	top: 120px;
+}
+
+#S .horizontal.bottom {
+	bottom: 0px;
+	left: 0px;
+}
+
+/*
+#S
+*/
+
+#T .vertical.middle {
+	left: 70px;
+	top: 0px;
+}
+#T .horizontal.top {
+	top:0px;
+	left: 0px;
+}
+/*
+#L
+*/
+
+#U .vertical.left {
+	left: 0px;
+	top: 0px;
+}
+
+#U .vertical.right {
+	right: 0px;
+	top: 0px;
+}
+
+
+#U .horizontal.bottom {
+	bottom: 0px;
+	left: 0px;
+}
+/*
+#O .horizontal{
+	background: magenta;
+	mix-blend-mode: multiply;
+}
+*/
+
+#W .vertical.left {
+	left: 0px;
+	top: 0px;
+}
+
+#W .verticalsf.right {
+	right: 0px;
+	top: 0px;
+}
+
+#W .horizontal.bottom {
+	bottom: 0px;
+	left: 0px;
+}
+#W .verticalss.rightone {
+	right: 68px;
+	bottom: 0px;
+}
+/*
+#M .horizontal{
+	background: magenta;
+	mix-blend-mode: multiply;
+}
+*/
+#Y .verticallfs.left {
+	left: 0px;
+	top: 0px;
+}
+
+#Y .verticalsf.right {
+	right: 0px;
+	top: 0px;
+}
+
+#Y .horizontal.middle {
+	bottom: 110px;
+	left: 0px;
+	
+}
+
+#Y .horizontal.bottom {
+	bottom: 0px;
+	left: 0px;
+}
+/*
+#Y .horizontal{
+	background: magenta;
+	mix-blend-mode: multiply;
+}
+*/
+#V .verticallfs.left {
+	left: 0px;
+	top: 0px;
+}
+
+#V .verticalsl.righttwo {
+	right: 0px;
+	top: 0px;
+}
+
+
+#V .vbig {
+	bottom: 0px;
+	left: 0px;
+}
+#V .vsmall {
+	bottom: 50px;
+	right: 20px;
+}
+
+/*
+#O .horizontal{
+	background: magenta;
+	mix-blend-mode: multiply;
+}
+*/
+#X .xbig {
+	top: 0px;
+	left:inherit;
+	right:inherit;
+}
+#X .xsmall {
+	top: 0px;
+	left:inherit;
+	right:inherit;
+}
+#X .xubig {
+	bottom: 0px;
+	left:inherit;
+	right:inherit;
+}
+#X .xusmall {
+	bottom: 0px;
+	left:inherit;
+	right:inherit;
+}
+/*
+#Z .horizontal{
+	background: magenta;
+	mix-blend-mode: multiply;
+}
+*/
+
+#Z .zbig {
+	top: 0px;
+	left:0px;
+}
+#Z .zsmall {
+	top: 15px;
+	left:0px;
+}
+#Z .horizontals.top {
+	top: 0px;
+	left: 0px;
+	
+}
+#Z .horizontalz {
+	bottom: 0px;
+	left: 0px;
+}
+
+
+
+
+/* Alternative A using Multiple Gradients */
